@@ -1,0 +1,1741 @@
+In this exercise I learned how to move and organize documents and folders from the command line in Windows Powershell
+
+For this task, I used 3 main commands
+
+- cd (change directory) - This command would let me move between all folders in my homework_01 folder to access the different files.
+- ls (list) - This command would list out which files were contained in the specific folder I was currently in.
+- move - This command would let me move a file out of the folder I was currently in to another file that I designated.
+
+Using all 3 of these commands together, I was able to sort each genere and artist into their correct folders. 
+
+
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\15623> cd '.\Documents\School\CMSI 186\homework_01\music-mashup\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                country
+d-----        1/21/2020  11:59 PM                funk
+d-----        1/21/2020  11:59 PM                hip-hop-rap
+d-----        1/21/2020  11:59 PM                reggae
+d-----        1/21/2020  11:59 PM                rock
+d-----        1/21/2020  11:59 PM                soul
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd country
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                BobMarley
+d-----        1/21/2020  11:59 PM                NickiMinaj
+d-----        1/21/2020  11:59 PM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd .\BobMarley\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\BobMarley> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\BobMarley
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\BobMarley> move .\Guns-n-Roses.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\BobMarley> cd ...
+cd : An object at the specified path C:\Users\15623\Documents\School\CMSI
+186\homework_01\music-mashup\country\BobMarley\... does not exist.
+At line:1 char:1
++ cd ...
++ ~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], PSArgumentException
+    + FullyQualifiedErrorId : Argument,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\BobMarley> cd .. .. ..
+Set-Location : A positional parameter cannot be found that accepts argument '..'.
+At line:1 char:1
++ cd .. .. ..
++ ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\BobMarley> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd....
+cd.... : The term 'cd....' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ cd....
++ ~~~~~~
+    + CategoryInfo          : ObjectNotFound: (cd....:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\reggae\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                Funkadelic
+d-----        1/21/2020  11:59 PM                GarthBrooks
+d-----        1/21/2020  11:59 PM                Temptations
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\country\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:05 AM                BobMarley
+d-----        1/21/2020  11:59 PM                NickiMinaj
+d-----        1/21/2020  11:59 PM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd .\BobMarley\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\BobMarley> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\BobMarley> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> move .\BobMarley\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                NickiMinaj
+d-----        1/21/2020  11:59 PM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd .\NickiMinaj\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\NickiMinaj> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\NickiMinaj
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\NickiMinaj> move .\FourTops.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\NickiMinaj> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\NickiMinaj> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:08 AM                NickiMinaj
+d-----        1/21/2020  11:59 PM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> move .\NickiMinaj\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd .\OhioPlayers\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\OhioPlayers> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\OhioPlayers
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          10341 BobMarley.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\OhioPlayers> move .\BobMarley.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\OhioPlayers> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\OhioPlayers> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:09 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> move .\OhioPlayers\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:09 AM                country
+d-----        1/22/2020  12:09 AM                funk
+d-----        1/22/2020  12:08 AM                hip-hop-rap
+d-----        1/22/2020  12:09 AM                reggae
+d-----        1/21/2020  11:59 PM                rock
+d-----        1/22/2020  12:08 AM                soul
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\funk\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                AlanisMorissette
+d-----        1/21/2020  11:59 PM                FourTops
+d-----        1/21/2020  11:59 PM                GunsNRoses
+d-----        1/22/2020  12:09 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd .\AlanisMorissette\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\AlanisMorissette> l
+l : The term 'l' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ l
++ ~
+    + CategoryInfo          : ObjectNotFound: (l:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\AlanisMorissette> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\AlanisMorissette
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          10526 juice-wrld_12.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\AlanisMorissette> move .\juice-wrld_12.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\AlanisMorissette> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\AlanisMorissette> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> move .\AlanisMorissette\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                FourTops
+d-----        1/21/2020  11:59 PM                GunsNRoses
+d-----        1/22/2020  12:09 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd .\FourTops\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\FourTops> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\FourTops
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          31180 cardi-b_18.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\FourTops> move .\cardi-b_18.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\FourTops> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\FourTops> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/21/2020  11:59 PM                GunsNRoses
+d-----        1/22/2020  12:09 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd .\FourTops\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\FourTops> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> move .\FourTops\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                GunsNRoses
+d-----        1/22/2020  12:09 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd .\GunsNRoses\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\GunsNRoses> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\GunsNRoses
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          23449 DollyParton.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\GunsNRoses> move .\DollyParton.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\GunsNRoses> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\GunsNRoses> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:12 AM                GunsNRoses
+d-----        1/22/2020  12:09 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> move .\GunsNRoses\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:09 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd .\OhioPlayers\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\OhioPlayers> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\OhioPlayers> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:09 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:12 AM                country
+d-----        1/22/2020  12:13 AM                funk
+d-----        1/22/2020  12:11 AM                hip-hop-rap
+d-----        1/22/2020  12:09 AM                reggae
+d-----        1/22/2020  12:13 AM                rock
+d-----        1/22/2020  12:12 AM                soul
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\hip-hop-rap\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                Aerosmith
+d-----        1/22/2020  12:08 AM                NickiMinaj
+d-----        1/21/2020  11:59 PM                PatsyCline
+d-----        1/21/2020  11:59 PM                SmokeyRobinson
+-a----        1/21/2020  11:59 PM          31180 cardi-b_18.jpg
+-a----        1/21/2020  11:59 PM          10526 juice-wrld_12.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\Aerosmith\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\Aerosmith> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\Aerosmith
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          12798 nicki-minaj_13.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\Aerosmith> move .\nicki-minaj_13.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\NickiMinaj\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\Aerosmith> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\Aerosmith> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\NickiMinaj\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\NickiMinaj> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\NickiMinaj
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          12798 nicki-minaj_13.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\NickiMinaj> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:14 AM                NickiMinaj
+d-----        1/21/2020  11:59 PM                PatsyCline
+d-----        1/21/2020  11:59 PM                SmokeyRobinson
+-a----        1/21/2020  11:59 PM          31180 cardi-b_18.jpg
+-a----        1/21/2020  11:59 PM          10526 juice-wrld_12.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\PatsyCline\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\PatsyCline> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\PatsyCline
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM           9499 Funkadelic.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\PatsyCline> move .\Funkadelic.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\PatsyCline> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\PatsyCline> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> move .\PatsyCline\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:14 AM                NickiMinaj
+d-----        1/21/2020  11:59 PM                SmokeyRobinson
+-a----        1/21/2020  11:59 PM          31180 cardi-b_18.jpg
+-a----        1/21/2020  11:59 PM          10526 juice-wrld_12.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\Aerosmith\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\Aerosmith> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\Aerosmith> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> move .\Aerosmith\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                NickiMinaj
+d-----        1/21/2020  11:59 PM                SmokeyRobinson
+-a----        1/21/2020  11:59 PM          31180 cardi-b_18.jpg
+-a----        1/21/2020  11:59 PM          10526 juice-wrld_12.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\SmokeyRobinson\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\SmokeyRobinson> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\SmokeyRobinson
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\SmokeyRobinson> move .\AlanisMorissette.png 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\'                                    PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\SmokeyRobinson> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\SmokeyRobinson> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> move .\SmokeyRobinson\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                NickiMinaj
+-a----        1/21/2020  11:59 PM          31180 cardi-b_18.jpg
+-a----        1/21/2020  11:59 PM          10526 juice-wrld_12.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:16 AM                country
+d-----        1/22/2020  12:15 AM                funk
+d-----        1/22/2020  12:18 AM                hip-hop-rap
+d-----        1/22/2020  12:09 AM                reggae
+d-----        1/22/2020  12:17 AM                rock
+d-----        1/22/2020  12:18 AM                soul
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\reggae\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:05 AM                BobMarley
+d-----        1/21/2020  11:59 PM                Funkadelic
+d-----        1/21/2020  11:59 PM                GarthBrooks
+d-----        1/21/2020  11:59 PM                Temptations
+-a----        1/21/2020  11:59 PM          10341 BobMarley.jpg
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd .\BobMarley\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd .\Funkadelic\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\Funkadelic> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\Funkadelic
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          29149 GarthBrooks.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\Funkadelic> move .\GarthBrooks.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\Funkadelic> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\Funkadelic> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> move .\Funkadelic\
+move : Source and destination path must be different.
+At line:1 char:1
++ move .\Funkadelic\
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\15623\...gae\Funkadelic\:DirectoryInfo) [Move-Item], IOExceptio
+   n
+    + FullyQualifiedErrorId : MoveDirectoryItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> move .\Funkadelic\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:05 AM                BobMarley
+d-----        1/21/2020  11:59 PM                GarthBrooks
+d-----        1/21/2020  11:59 PM                Temptations
+-a----        1/21/2020  11:59 PM          10341 BobMarley.jpg
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> move .\GarthBrooks\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:05 AM                BobMarley
+d-----        1/21/2020  11:59 PM                Temptations
+-a----        1/21/2020  11:59 PM          10341 BobMarley.jpg
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> move .\Temptations\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:05 AM                BobMarley
+-a----        1/21/2020  11:59 PM          10341 BobMarley.jpg
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> move .\BobMarley.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:20 AM                BobMarley
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd .\BobMarley\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          10341 BobMarley.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:20 AM                BobMarley
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> move .\Guns-n-Roses.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:20 AM                BobMarley
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:19 AM                country
+d-----        1/22/2020  12:19 AM                funk
+d-----        1/22/2020  12:18 AM                hip-hop-rap
+d-----        1/22/2020  12:20 AM                reggae
+d-----        1/22/2020  12:20 AM                rock
+d-----        1/22/2020  12:20 AM                soul
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\rock\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:10 AM                AlanisMorissette
+d-----        1/21/2020  11:59 PM                CardiB
+d-----        1/21/2020  11:59 PM                EarthWindAndFire
+d-----        1/22/2020  12:12 AM                GunsNRoses
+d-----        1/21/2020  11:59 PM                PeterTosh
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\Aerosmith\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\Aerosmith> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\Aerosmith> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\AlanisMorissette\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\CardiB\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\CardiB> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\CardiB
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          42665 JimmyCliff.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\CardiB> move .\JimmyCliff.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\CardiB> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\CardiB> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:10 AM                AlanisMorissette
+d-----        1/22/2020  12:21 AM                CardiB
+d-----        1/21/2020  11:59 PM                EarthWindAndFire
+d-----        1/22/2020  12:12 AM                GunsNRoses
+d-----        1/21/2020  11:59 PM                PeterTosh
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> move .\CardiB\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:10 AM                AlanisMorissette
+d-----        1/21/2020  11:59 PM                EarthWindAndFire
+d-----        1/22/2020  12:12 AM                GunsNRoses
+d-----        1/21/2020  11:59 PM                PeterTosh
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\GunsNRoses\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\GunsNRoses> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\GunsNRoses> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> move .\GunsNRoses\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:10 AM                AlanisMorissette
+d-----        1/21/2020  11:59 PM                EarthWindAndFire
+d-----        1/21/2020  11:59 PM                PeterTosh
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\PeterTosh\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\PeterTosh> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\PeterTosh
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\PeterTosh> move .\SmokeyRobinson.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\PeterTosh> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> move .\PeterTosh\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:10 AM                AlanisMorissette
+d-----        1/21/2020  11:59 PM                EarthWindAndFire
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\EarthWindAndFire\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\EarthWindAndFire> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\EarthWindAndFire
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          50256 Temptations.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\EarthWindAndFire> move .\Temptations.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\EarthWindAndFire> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\EarthWindAndFire> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> move .\EarthWindAndFire\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:10 AM                AlanisMorissette
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> move .\AlanisMorissette.png
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> move .\AlanisMorissette.png 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:25 AM                AlanisMorissette
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\AlanisMorissette\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:14 AM                Aerosmith
+d-----        1/22/2020  12:25 AM                AlanisMorissette
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:19 AM                country
+d-----        1/22/2020  12:19 AM                funk
+d-----        1/22/2020  12:21 AM                hip-hop-rap
+d-----        1/22/2020  12:23 AM                reggae
+d-----        1/22/2020  12:25 AM                rock
+d-----        1/22/2020  12:24 AM                soul
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\soul\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/21/2020  11:59 PM                DollyParton
+d-----        1/22/2020  12:24 AM                EarthWindAndFire
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/22/2020  12:12 AM                GunsNRoses
+d-----        1/21/2020  11:59 PM                JimmyCliff
+d-----        1/21/2020  11:59 PM                JuiceWrld
+d-----        1/22/2020  12:17 AM                SmokeyRobinson
+d-----        1/22/2020  12:24 AM                Temptations
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\DollyParton\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\DollyParton> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\DollyParton
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         134842 EarthWindAndFire.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\DollyParton> move .\EarthWindAndFire.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\DollyParton> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\DollyParton> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> move .\DollyParton\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/22/2020  12:12 AM                GunsNRoses
+d-----        1/21/2020  11:59 PM                JimmyCliff
+d-----        1/21/2020  11:59 PM                JuiceWrld
+d-----        1/22/2020  12:17 AM                SmokeyRobinson
+d-----        1/22/2020  12:24 AM                Temptations
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\EarthWindAndFire\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         134842 EarthWindAndFire.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/22/2020  12:12 AM                GunsNRoses
+d-----        1/21/2020  11:59 PM                JimmyCliff
+d-----        1/21/2020  11:59 PM                JuiceWrld
+d-----        1/22/2020  12:17 AM                SmokeyRobinson
+d-----        1/22/2020  12:24 AM                Temptations
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\FourTops\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\GunsNRoses\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\GunsNRoses> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\GunsNRoses> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> move .\GunsNRoses\
+move : Source and destination path must be different.
+At line:1 char:1
++ move .\GunsNRoses\
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : WriteError: (C:\Users\15623\...oul\GunsNRoses\:DirectoryInfo) [Move-Item], IOExceptio
+   n
+    + FullyQualifiedErrorId : MoveDirectoryItemIOError,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> move .\GunsNRoses\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/21/2020  11:59 PM                JimmyCliff
+d-----        1/21/2020  11:59 PM                JuiceWrld
+d-----        1/22/2020  12:17 AM                SmokeyRobinson
+d-----        1/22/2020  12:24 AM                Temptations
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\JimmyCliff\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JimmyCliff> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JimmyCliff
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         185037 aerosmith.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JimmyCliff> move .\aerosmith.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\Aerosmith\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JimmyCliff> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JimmyCliff> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/22/2020  12:28 AM                JimmyCliff
+d-----        1/21/2020  11:59 PM                JuiceWrld
+d-----        1/22/2020  12:17 AM                SmokeyRobinson
+d-----        1/22/2020  12:24 AM                Temptations
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> move .\JimmyCliff\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\JuiceWrld\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JuiceWrld> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JuiceWrld
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          78774 PatsyCline.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JuiceWrld> move .\PatsyCline.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\PatsyCline\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JuiceWrld> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/21/2020  11:59 PM                JuiceWrld
+d-----        1/22/2020  12:17 AM                SmokeyRobinson
+d-----        1/22/2020  12:24 AM                Temptations
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\SmokeyRobinson\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> move .\SmokeyRobinson.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> las
+las : The term 'las' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ las
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (las:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/22/2020  12:29 AM                JuiceWrld
+d-----        1/22/2020  12:29 AM                SmokeyRobinson
+d-----        1/22/2020  12:24 AM                Temptations
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\Temptations\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          77903 Beat65ToshCover.jpg
+-a----        1/21/2020  11:59 PM          50256 Temptations.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations> move .\Beat65ToshCover.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          50256 Temptations.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:11 AM                FourTops
+d-----        1/22/2020  12:29 AM                JuiceWrld
+d-----        1/22/2020  12:29 AM                SmokeyRobinson
+d-----        1/22/2020  12:30 AM                Temptations
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> move .\FourTops.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:31 AM                FourTops
+d-----        1/22/2020  12:29 AM                JuiceWrld
+d-----        1/22/2020  12:29 AM                SmokeyRobinson
+d-----        1/22/2020  12:30 AM                Temptations
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\JuiceWrld\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JuiceWrld> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\JuiceWrld> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> move .\JuiceWrld\ 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:31 AM                FourTops
+d-----        1/22/2020  12:29 AM                SmokeyRobinson
+d-----        1/22/2020  12:30 AM                Temptations
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\EarthWindAndFire\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         134842 EarthWindAndFire.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\FourTops\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\SmokeyRobinson\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\Temptations\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          50256 Temptations.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                country
+d-----        1/22/2020  12:19 AM                funk
+d-----        1/22/2020  12:31 AM                hip-hop-rap
+d-----        1/22/2020  12:28 AM                reggae
+d-----        1/22/2020  12:27 AM                rock
+d-----        1/22/2020  12:31 AM                soul
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\country\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                DollyParton
+d-----        1/21/2020  11:59 PM                GarthBrooks
+d-----        1/22/2020  12:29 AM                PatsyCline
+-a----        1/21/2020  11:59 PM          23449 DollyParton.jpg
+-a----        1/21/2020  11:59 PM          29149 GarthBrooks.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> move .\DollyParton.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\DollyParton\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> move .\GarthBrooks.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\GarthBrooks\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:32 AM                DollyParton
+d-----        1/22/2020  12:32 AM                GarthBrooks
+d-----        1/22/2020  12:29 AM                PatsyCline
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cddo
+cddo : The term 'cddo' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ cddo
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (cddo:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd .\DollyParton\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\DollyParton> la
+la : The term 'la' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ la
++ ~~
+    + CategoryInfo          : ObjectNotFound: (la:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\DollyParton> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\DollyParton
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          23449 DollyParton.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\DollyParton> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd .\GarthBrooks\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\GarthBrooks> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\GarthBrooks
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          29149 GarthBrooks.jpg
+-a----        1/21/2020  11:59 PM          35339 OhioPlayers.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\GarthBrooks> move .\OhioPlayers.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\OhioPlayers\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\GarthBrooks> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\GarthBrooks
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          29149 GarthBrooks.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\GarthBrooks> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:32 AM                DollyParton
+d-----        1/22/2020  12:33 AM                GarthBrooks
+d-----        1/22/2020  12:29 AM                PatsyCline
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd .\PatsyCline\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\PatsyCline> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\PatsyCline
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          78774 PatsyCline.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country\PatsyCline> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\country> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\funk\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:18 AM                Funkadelic
+d-----        1/22/2020  12:33 AM                OhioPlayers
+-a----        1/21/2020  11:59 PM           9499 Funkadelic.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> move .\Funkadelic.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\Funkadelic\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:33 AM                Funkadelic
+d-----        1/22/2020  12:33 AM                OhioPlayers
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd .\Funkadelic\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\Funkadelic> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\Funkadelic
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM           9499 Funkadelic.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\Funkadelic> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd .\OhioPlayers\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\OhioPlayers> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\OhioPlayers
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          35339 OhioPlayers.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk\OhioPlayers> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\funk> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\hip-hop-rap\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:21 AM                CardiB
+d-----        1/22/2020  12:29 AM                JuiceWrld
+d-----        1/22/2020  12:14 AM                NickiMinaj
+-a----        1/21/2020  11:59 PM          77903 Beat65ToshCover.jpg
+-a----        1/21/2020  11:59 PM          31180 cardi-b_18.jpg
+-a----        1/21/2020  11:59 PM          10526 juice-wrld_12.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\CardiB\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\CardiB> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\CardiB> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> move .\cardi-b_18.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\CardiB\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> move .\juice-wrld_12.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\JuiceWrld\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:34 AM                CardiB
+d-----        1/22/2020  12:34 AM                JuiceWrld
+d-----        1/22/2020  12:14 AM                NickiMinaj
+-a----        1/21/2020  11:59 PM          77903 Beat65ToshCover.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\CardiB\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\CardiB> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\CardiB
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          31180 cardi-b_18.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\CardiB> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\JuiceWrld\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\JuiceWrld> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\JuiceWrld
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          10526 juice-wrld_12.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\JuiceWrld> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd .\NickiMinaj\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\NickiMinaj> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\NickiMinaj
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          12798 nicki-minaj_13.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap\NickiMinaj> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\hip-hop-rap> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\reggae\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:20 AM                BobMarley
+d-----        1/22/2020  12:28 AM                JimmyCliff
+d-----        1/22/2020  12:23 AM                PeterTosh
+-a----        1/21/2020  11:59 PM          42665 JimmyCliff.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> move .\JimmyCliff.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\JimmyCliff\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd .\BobMarley\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          10341 BobMarley.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\BobMarley> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd .\JimmyCliff\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\JimmyCliff> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\JimmyCliff
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          42665 JimmyCliff.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\JimmyCliff> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd .\PeterTosh\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\PeterTosh> ls
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae\PeterTosh> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:20 AM                BobMarley
+d-----        1/22/2020  12:35 AM                JimmyCliff
+d-----        1/22/2020  12:23 AM                PeterTosh
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\reggae> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\rock\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:28 AM                Aerosmith
+d-----        1/22/2020  12:25 AM                AlanisMorissette
+d-----        1/22/2020  12:12 AM                GunsNRoses
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> move .\Guns-n-Roses.jpg 'C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\GunsNRoses\'
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\Aerosmith\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\Aerosmith> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\Aerosmith
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         185037 aerosmith.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\Aerosmith> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\AlanisMorissette\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         216767 AlanisMorissette.png
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\AlanisMorissette> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\GunsNRoses\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\GunsNRoses> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\GunsNRoses
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          14655 Guns-n-Roses.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\GunsNRoses> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd .\Aerosmith\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock\Aerosmith> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:28 AM                Aerosmith
+d-----        1/22/2020  12:25 AM                AlanisMorissette
+d-----        1/22/2020  12:36 AM                GunsNRoses
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\rock> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> cd .\soul\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:26 AM                EarthWindAndFire
+d-----        1/22/2020  12:31 AM                FourTops
+d-----        1/22/2020  12:29 AM                SmokeyRobinson
+d-----        1/22/2020  12:30 AM                Temptations
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\EarthWindAndFire\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         134842 EarthWindAndFire.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\EarthWindAndFire> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\FourTops\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          26164 FourTops.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\FourTops> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\SmokeyRobinson\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM         179838 SmokeyRobinson.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\SmokeyRobinson> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd .\Temptations\
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        1/21/2020  11:59 PM          50256 Temptations.jpg
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul\Temptations> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd.
+cd. : The term 'cd.' is not recognized as the name of a cmdlet, function, script file, or operable program. Check
+the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ cd.
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (cd.:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup\soul> cd..
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup> ls
+
+
+    Directory: C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        1/22/2020  12:32 AM                country
+d-----        1/22/2020  12:33 AM                funk
+d-----        1/22/2020  12:34 AM                hip-hop-rap
+d-----        1/22/2020  12:35 AM                reggae
+d-----        1/22/2020  12:36 AM                rock
+d-----        1/22/2020  12:31 AM                soul
+
+
+PS C:\Users\15623\Documents\School\CMSI 186\homework_01\music-mashup>
