@@ -20,6 +20,10 @@ public class DiceSet {
    *  the values of the dice in the set
    */
    public void roll(){
+     Die[]d = newDie[die];
+     for (int i = 0; i < dice; i++){
+       d[i] = new Die(sides);
+     }
      Die.roll();
    }
 
