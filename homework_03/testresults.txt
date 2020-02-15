@@ -1,0 +1,891 @@
+The value is: 4
+The value is: [15]
+testing DiceSet 
+TESTING THE DIE CLASS: TEST CONSTRUCTOR FOR INVALID NUMBERS OF SIDES:
+   Too few sides requested to constructor....
+TESTING THE DIE CLASS: TESTS ON 4-SIDED DIE:
+   roll() test for 4 sided die: 
+   You rolled a 1
+   You rolled a 1
+   You rolled a 2
+   You rolled a 4
+   You rolled a 3
+   Current value is: [3]
+TESTING THE DIE CLASS: TESTS ON 5-SIDED DIE:
+   roll() test for 5 sided die: 
+   You rolled a 5
+   You rolled a 2
+   You rolled a 1
+   You rolled a 2
+   You rolled a 1
+   Current value is: [1]
+TESTING THE DIE CLASS: TESTS ON 6-SIDED DIE:
+   roll() test for 6 sided die: 
+   You rolled a 6
+   You rolled a 4
+   You rolled a 3
+   You rolled a 4
+   You rolled a 5
+   Current value is: [5]
+TESTING THE DIE CLASS: TESTS ON 7-SIDED DIE:
+   roll() test for 7 sided die: 
+   You rolled a 2
+   You rolled a 4
+   You rolled a 6
+   You rolled a 3
+   You rolled a 3
+   Current value is: [3]
+TESTING THE DIE CLASS: TESTS ON 8-SIDED DIE:
+   roll() test for 8 sided die: 
+   You rolled a 8
+   You rolled a 3
+   You rolled a 8
+   You rolled a 5
+   You rolled a 5
+   Current value is: [5]
+TESTING THE DICESET CLASS: TEST CONSTRUCTOR FOR 3 SIX-SIDED DICE:
+  DiceSet: 3 dice, six sided - ds36:
+      initialized ds36 contents             : 
+      after collective roll ds36 contents   : 
+      after individual roll(2) ds36 contents: 
+      sum of dice values is: 0
+   Re-rolling all dice
+      after collective roll ds36 contents   : 
+      after individual roll(2) ds36 contents: 
+      sum of dice values is                 : 0
+   Test of getIndividual(): 
+      value of die at index 0: -999
+      value of die at index 1: -999
+      value of die at index 2: -999
+TESTING THE DICESET CLASS: TEST CONSTRUCTOR FOR 6 NINE-SIDED DICE:
+   DiceSet: 6 dice, nine sided - ds69:
+      initialized ds36 contents             : 
+      after collective roll ds69 contents   : 
+      after individual roll(2) ds69 contents: 
+      sum of dice values is                 : 0
+   Re-rolling all dice
+      after collective roll ds69 contents   : 
+      after individual roll(3) ds69 contents: 
+      sum of dice values is                 : 0
+   Test of getIndividual(): 
+      value of die at index 0: -999
+      value of die at index 1: -999
+      value of die at index 2: -999
+      value of die at index 3: -999
+      value of die at index 4: -999
+      value of die at index 5: -999
+TESTING THE DICESET CLASS: TEST CONSTRUCTOR FOR 9 SEVENTEEN-SIDED DICE:
+   DiceSet: 9 dice, 17 sided - ds917:
+      initialized ds36 contents              : 
+      after collective roll ds917 contents   : 
+      after individual roll(6) ds917 contents: 
+      sum of dice values is                  : 0
+   Re-rolling all dice
+      after collective roll ds917 contents   : 
+      after individual roll(8) ds69 contents : 
+      sum of dice values is                  : 0
+   Test of getIndividual(): 
+      value of die at index 0: -999
+      value of die at index 1: -999
+      value of die at index 2: -999
+      value of die at index 3: -999
+      value of die at index 4: -999
+      value of die at index 5: -999
+      value of die at index 6: -999
+      value of die at index 7: -999
+      value of die at index 8: -999
+TESTING THE DICESET CLASS: TEST 'isIdentical()' FOR 9 SEVENTEEN-SIDED DICE:
+   Test of isIndentical(): 
+      Test of ds917 against ds69   : true
+      Test of ds917 against itself : true
+TESTING THE DICESET CLASS: TEST 'isIdentical()' FOR NEW SET OF 9 SEVENTEEN-SIDED DICE:
+   DiceSet ds917 contents       : 
+      New DiceSet ds2_917 contents : 
+      Test of ds917 against ds2_917: true
+......End of DiceSet Class Testing.....
+
+
+
+   Welcome to the High Roll Game!!! 
+
+Please enter the number of die and the number of sides each die has:
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 3
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 3
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 4
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 3
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 4
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: q
+
+
+   Welcome to the High Roll Game!!! 
+
+Please enter the number of die and the number of sides each die has:
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 11
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 7
+
+Please enter a valid option.
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 3
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 4
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 3
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 3
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 4
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: q
+
+
+   Welcome to the High Roll Game!!! 
+
+Please enter the number of die and the number of sides each die has:
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 29
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 17
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 3
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 4
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 1
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 19
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 2
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 23
+
+Which die would you like to roll?: >> 
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 3
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 4
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: 5
+
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: q
+
+
+   Welcome to the High Roll Game!!! 
+
+Please enter the number of die and the number of sides each die has:
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: you didn't trap the error for 3 sides
+
+Please enter a valid option.
+********************************************************** 
+
+1. ROLL ALL THE DICE
+2. ROLL A SINGLE DIE
+3. CALCULATE THE SCORE FOR THIS SET
+4. SAVE THIS SCORE AS HIGH SCORE
+5. DISPLAY THE HIGH SCORE
+6. ENTER 'Q TO QUIT THE PROGRAM' 
+
+Please type the number of the option you want to execute: >>    You typed: q
+

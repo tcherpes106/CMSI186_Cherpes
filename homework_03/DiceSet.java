@@ -20,11 +20,11 @@ public class DiceSet {
    *  the values of the dice in the set
    */
    public void roll(){
-     Die[]d = newDie[die];
-     for (int i = 0; i < dice; i++){
-       d[i] = new Die(sides);
+//     Die[] d = new Die[die];      // you DON'T want to create a new array here!!
+     for (int i = 0; i < count; i++) {    // you had "dice" and you need "count"
+//       d[i] = new Die(sides);           // this doesn't belong here...
+         ds[i].roll();                    // you had "Die.roll();" and it's not static
      }
-     Die.roll();
    }
 
   /**

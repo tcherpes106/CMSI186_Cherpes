@@ -11,9 +11,10 @@ public class Die {
      pips = randomValue.nextInt(sides) + 1;
    }
 
-
-   public void roll(){
+// this should return an int, not void
+   public int roll() {
      pips = randomValue.nextInt(sides) + 1;
+     return pips;     // need a return to return an int
    }
 
 
