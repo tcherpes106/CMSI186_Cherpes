@@ -1,1 +1,1 @@
-
+I was almost able to master this homework. I got the program to be able to run and detect collisions while having many ball objects, but I never was able to add the limit to the field. Something to add in the future. 
