@@ -95,7 +95,7 @@ HighRoll          : passes all evaluation tests       - 2 points
 Total 37 out of 37 = 100% which is an A-plus
 
 Your score:
-Total 34 out of 37 = 91.89% which is an A-minus
+Total 33 out of 37 = 89.19% which is a B-plus
 
 Explicit comments on the exercise:
 ----------------------------------
