@@ -1,0 +1,972 @@
+.                                                                              
+=====================================================                          
+Testing the SkateRamp Ingetration Project Homework # 05                        
+=====================================================                          
+.                                                                              
+.                                                                              
+... Running built-in tests in the SkateRamp class                              
+...   should either throw exceptions which will not appear in the output file  
+...     but which should be caught to keep the test program running            
+...   or preferably output error messages which SHOULD appear there then quit  
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+.                                                                              
+.                                                                              
+============================================================================   
+Testing bogus function name 'bogus'                                            
+...should either throw an exception which will not appear in the output file   
+...  or preferably ouput error messages which SHOULD appear there, then quit   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+.                                                                              
+.                                                                              
+============================================================================   
+Testing bogus function name 'poly' with no arguments                           
+...should either throw an exception which will not appear in the output file   
+...  or preferably ouput error messages which SHOULD appear there, then quit   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with only one arg                           
+...should either throw an exception which will not appear in the output file   
+...  or preferably ouput error messages which SHOULD appear there, then quit   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with only two args                          
+...should either throw an exception which will not appear in the output file   
+...  or preferably ouput error messages which SHOULD appear there, then quit   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 0.0
+Approximation with 2 rectangles yields an area of 0.0
+Approximation with 3 rectangles yields an area of 0.0
+The area of null from 1.0 to 2.0 is 0.0
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with four args with negative final arg      
+...should either throw an exception which will not appear in the output file   
+...  or preferably ouput error messages which SHOULD appear there, then quit   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with four args with zero final arg          
+...should either throw an exception which will not appear in the output file   
+...  or preferably ouput error messages which SHOULD appear there, then quit   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with three args and default percentage      
+...should produce a result close to '0.0000'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 0.0
+Approximation with 2 rectangles yields an area of 0.0
+Approximation with 3 rectangles yields an area of 0.0
+The area of y = 0.0 from 1.0 to 2.0 is 0.0
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with three args with final arg 1e-6%       
+...should produce a result close to '2.0000'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-6
+Approximation with 1 rectangles yields an area of 2.0
+Approximation with 2 rectangles yields an area of 2.0
+Approximation with 3 rectangles yields an area of 2.0
+The area of y = 2.0 from 1.0 to 2.0 is 2.0
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with test case parabola args and 1e-6%     
+...should produce a result close to '18.0000'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-6
+Approximation with 1 rectangles yields an area of 22.5
+Approximation with 2 rectangles yields an area of 19.125
+Approximation with 3 rectangles yields an area of 18.5
+The area of y = 0.0 + 8.0x + -2.0x^2 from 1.0 to 4.0 is 18.5
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with test case parabola args and default    
+...should produce a result close to '18.1800'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 22.5
+Approximation with 2 rectangles yields an area of 19.125
+Approximation with 3 rectangles yields an area of 18.5
+The area of y = 0.0 + 8.0x + -2.0x^2 from 1.0 to 4.0 is 18.5
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' with web page args and default              
+...should produce a result close to '1268.75'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 393.75
+Approximation with 2 rectangles yields an area of 1068.75
+Approximation with 3 rectangles yields an area of 1193.75
+Approximation with 4 rectangles yields an area of 1237.5
+Approximation with 5 rectangles yields an area of 1257.75
+Approximation with 6 rectangles yields an area of 1268.75
+Approximation with 7 rectangles yields an area of 1275.382653061225
+The area of y = 1.0 + -2.1x + 3.2x^2 from -10.0 to 5.0 is 1275.382653061225
+The equation was approximated using 7 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'poly' for x\5 - 2X\3 - X\2 - 7X - 3            
+   from 0 to 2 with 1e-6%                                                    
+...should produce a result close to '-20.00'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-6
+Approximation with 1 rectangles yields an area of -24.0
+Approximation with 2 rectangles yields an area of -21.875
+Approximation with 3 rectangles yields an area of -20.90534979423868
+The area of y = -3.0 + -7.0x + -1.0x^2 + -2.0x^3 + 0.0x^4 + 1.0x^5 from 0.0 to 2.0 is -20.90534979423868
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sin' with web page args and default               
+...should produce a result close to '1.9137'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 3.810856376639243
+Approximation with 2 rectangles yields an area of 2.201184018103368
+Approximation with 3 rectangles yields an area of 2.0149155231216733
+The area of y = sin x from -0.27 to 3.55 is 2.0149155231216733
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sin' with args -3.45 6.789 and 1.5e-4%           
+...should produce a result close to '-1.8278'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.5E-4
+Approximation with 1 rectangles yields an area of 10.189164185689899
+Approximation with 2 rectangles yields an area of -8.512551607680846
+Approximation with 3 rectangles yields an area of -3.1477354930525316
+Approximation with 4 rectangles yields an area of -2.441697394560062
+The area of y = sin x from -3.45 to 6.789 is -2.441697394560062
+The equation was approximated using 4 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sin' with args 0.0 1.0 -3.45 6.789 and 1.5e-4%   
+...should produce a result close to '-1.8278'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.5E-4
+Approximation with 1 rectangles yields an area of 10.189164185689899
+Approximation with 2 rectangles yields an area of -8.512551607680846
+Approximation with 3 rectangles yields an area of -3.1477354930525316
+Approximation with 4 rectangles yields an area of -2.441697394560062
+The area of y = sin x from -3.45 to 6.789 is -2.441697394560062
+The equation was approximated using 4 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sin' with args -17.0 3.0 -11.0 11.0 and 1e-7%    
+...should produce a result close to '0.6409'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-7
+Approximation with 1 rectangles yields an area of 0.0
+Approximation with 2 rectangles yields an area of 0.0
+Approximation with 3 rectangles yields an area of -1.2434497875801753E-14
+The area of y = sin x from -11.0 to 11.0 is -1.2434497875801753E-14
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sin' with args -17.0 1.0 -23.0 23.0 and 1e-4%    
+...should produce a result close to '-1.6276'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-4
+Approximation with 1 rectangles yields an area of 0.0
+Approximation with 2 rectangles yields an area of 0.0
+Approximation with 3 rectangles yields an area of -2.3092638912203256E-14
+The area of y = sin x from -23.0 to 23.0 is -2.3092638912203256E-14
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sqrt' with args 23.0 -3.0 7.0 1.0 7.0 and 1e-6%  
+...should output a result close to 67.8939                                     
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-6
+Approximation with 1 rectangles yields an area of 12.0
+Approximation with 2 rectangles yields an area of 11.779040129987713
+Approximation with 3 rectangles yields an area of 11.727406610312546
+The area of y = x^(1/2) from 1.0 to 7.0 is 11.727406610312546
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sqrt' with args 100.0 0.0 1.0 and 1e-8%          
+...should output a result close to 10.0                                        
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-8
+Approximation with 1 rectangles yields an area of 0.7071067811865476
+Approximation with 2 rectangles yields an area of 0.6830127018922193
+Approximation with 3 rectangles yields an area of 0.6760753336085624
+The area of y = x^(1/2) from 0.0 to 1.0 is 0.6760753336085624
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sqrt' with args -100.0 0.0 1.0 and 1e-8%         
+...should either throw an exception which will not appear in the output file   
+...  or preferably ouput error messages which SHOULD appear there, then quit   
+...  Also acceptable is the java output of 'NaN'                               
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-8
+Approximation with 1 rectangles yields an area of 0.7071067811865476
+Approximation with 2 rectangles yields an area of 0.6830127018922193
+Approximation with 3 rectangles yields an area of 0.6760753336085624
+The area of y = x^(1/2) from 0.0 to 1.0 is 0.6760753336085624
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'sqrt' with args 2.0 0.0 1.0 and 1e-3%            
+...should output a result close to 1.4142                                      
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 0.001
+Approximation with 1 rectangles yields an area of 0.7071067811865476
+Approximation with 2 rectangles yields an area of 0.6830127018922193
+Approximation with 3 rectangles yields an area of 0.6760753336085624
+The area of y = x^(1/2) from 0.0 to 1.0 is 0.6760753336085624
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'cos' with web page args and default               
+...should produce a result close to '-0.1326'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of -0.2641470738585166
+Approximation with 2 rectangles yields an area of -0.15257366322445876
+Approximation with 3 rectangles yields an area of -0.13966258155707867
+The area of y = cos x from -0.27 to 3.55 is -0.13966258155707867
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'cos' with args -3.45 6.789 and 1.5e-4%           
+...should produce a result close to '0.1810'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.5E-4
+Approximation with 1 rectangles yields an area of -1.0089867179771455
+Approximation with 2 rectangles yields an area of 0.8429593783862863
+Approximation with 3 rectangles yields an area of 0.3117059698238829
+Approximation with 4 rectangles yields an area of 0.24179021905354636
+The area of y = cos x from -3.45 to 6.789 is 0.24179021905354636
+The equation was approximated using 4 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'cos' with args 0.0 1.0 -3.45 6.789 and 1.5e-4%   
+...should produce a result close to '0.1810'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.5E-4
+Approximation with 1 rectangles yields an area of -1.0089867179771455
+Approximation with 2 rectangles yields an area of 0.8429593783862863
+Approximation with 3 rectangles yields an area of 0.3117059698238829
+Approximation with 4 rectangles yields an area of 0.24179021905354636
+The area of y = cos x from -3.45 to 6.789 is 0.24179021905354636
+The equation was approximated using 4 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'cos' with args -17.0 3.0 -11.0 11.0 and 1e-7%    
+...should produce a result close to '-0.1834'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-7
+Approximation with 1 rectangles yields an area of 22.0
+Approximation with 2 rectangles yields an area of 15.59073503440772
+Approximation with 3 rectangles yields an area of 14.629158736384376
+The area of y = cos x from -11.0 to 11.0 is 14.629158736384376
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'cos' with args -17.0 1.0 -23.0 23.0 and 1e-4%    
+...should produce a result close to '0.4658'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-4
+Approximation with 1 rectangles yields an area of 46.0
+Approximation with 2 rectangles yields an area of 22.23201890263827
+Approximation with 3 rectangles yields an area of -13.20638849131678
+The area of y = cos x from -23.0 to 23.0 is -13.20638849131678
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'tan' with args -0.5 1.25 and default              
+...should produce a result close to '1.0029'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 0.6888465078698573
+Approximation with 2 rectangles yields an area of 0.8690028653649393
+Approximation with 3 rectangles yields an area of 0.9365582384787522
+Approximation with 4 rectangles yields an area of 0.9684484907923883
+Approximation with 5 rectangles yields an area of 0.9857945016628828
+Approximation with 6 rectangles yields an area of 0.9961875159902571
+Approximation with 7 rectangles yields an area of 1.0028693366493577
+Approximation with 8 rectangles yields an area of 1.0074022941615608
+The area of y = tan x from -0.5 to 1.25 is 1.0074022941615608
+The equation was approximated using 8 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'tan' with args -0.5 1.25 and 1.5e-4%             
+...should produce a result close to '1.0235'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.5E-4
+Approximation with 1 rectangles yields an area of 0.6888465078698573
+Approximation with 2 rectangles yields an area of 0.8690028653649393
+Approximation with 3 rectangles yields an area of 0.9365582384787522
+Approximation with 4 rectangles yields an area of 0.9684484907923883
+Approximation with 5 rectangles yields an area of 0.9857945016628828
+Approximation with 6 rectangles yields an area of 0.9961875159902571
+Approximation with 7 rectangles yields an area of 1.0028693366493577
+Approximation with 8 rectangles yields an area of 1.0074022941615608
+Approximation with 9 rectangles yields an area of 1.010610383755173
+Approximation with 10 rectangles yields an area of 1.0129597749057702
+Approximation with 11 rectangles yields an area of 1.014729464940507
+Approximation with 12 rectangles yields an area of 1.0160943252261283
+Approximation with 13 rectangles yields an area of 1.0171682796400898
+Approximation with 14 rectangles yields an area of 1.018028020754512
+Approximation with 15 rectangles yields an area of 1.0187266534859647
+Approximation with 16 rectangles yields an area of 1.019301861456071
+Approximation with 17 rectangles yields an area of 1.0197809656561398
+Approximation with 18 rectangles yields an area of 1.0201841535964682
+Approximation with 19 rectangles yields an area of 1.020526595974742
+Approximation with 20 rectangles yields an area of 1.0208198672180842
+Approximation with 21 rectangles yields an area of 1.0210729191662828
+Approximation with 22 rectangles yields an area of 1.0212927612619074
+Approximation with 23 rectangles yields an area of 1.0214849439526366
+Approximation with 24 rectangles yields an area of 1.0216539076516196
+Approximation with 25 rectangles yields an area of 1.0218032382683684
+Approximation with 26 rectangles yields an area of 1.021935856789788
+The area of y = tan x from -0.5 to 1.25 is 1.021935856789788
+The equation was approximated using 26 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'tan' with args 0.0 1.0 -0.5 1.25 and 1.5e-4%     
+...should produce a result close to '1.0235'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.5E-4
+Approximation with 1 rectangles yields an area of 0.6888465078698573
+Approximation with 2 rectangles yields an area of 0.8690028653649393
+Approximation with 3 rectangles yields an area of 0.9365582384787522
+Approximation with 4 rectangles yields an area of 0.9684484907923883
+Approximation with 5 rectangles yields an area of 0.9857945016628828
+Approximation with 6 rectangles yields an area of 0.9961875159902571
+Approximation with 7 rectangles yields an area of 1.0028693366493577
+Approximation with 8 rectangles yields an area of 1.0074022941615608
+Approximation with 9 rectangles yields an area of 1.010610383755173
+Approximation with 10 rectangles yields an area of 1.0129597749057702
+Approximation with 11 rectangles yields an area of 1.014729464940507
+Approximation with 12 rectangles yields an area of 1.0160943252261283
+Approximation with 13 rectangles yields an area of 1.0171682796400898
+Approximation with 14 rectangles yields an area of 1.018028020754512
+Approximation with 15 rectangles yields an area of 1.0187266534859647
+Approximation with 16 rectangles yields an area of 1.019301861456071
+Approximation with 17 rectangles yields an area of 1.0197809656561398
+Approximation with 18 rectangles yields an area of 1.0201841535964682
+Approximation with 19 rectangles yields an area of 1.020526595974742
+Approximation with 20 rectangles yields an area of 1.0208198672180842
+Approximation with 21 rectangles yields an area of 1.0210729191662828
+Approximation with 22 rectangles yields an area of 1.0212927612619074
+Approximation with 23 rectangles yields an area of 1.0214849439526366
+Approximation with 24 rectangles yields an area of 1.0216539076516196
+Approximation with 25 rectangles yields an area of 1.0218032382683684
+Approximation with 26 rectangles yields an area of 1.021935856789788
+The area of y = tan x from -0.5 to 1.25 is 1.021935856789788
+The equation was approximated using 26 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'log' with args 0.0 1.0 1.1 2.3 and 1e-5%         
+...should produce a result close to '0.6109'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-5
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'log'                                              
+...should produce a result close to '0.6140'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'exp' with web page args and default prct          
+...should produce a result close to '25.5763'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 23.463947826282258
+Approximation with 2 rectangles yields an area of 25.133181209702315
+Approximation with 3 rectangles yields an area of 25.46035381886988
+Approximation with 4 rectangles yields an area of 25.57627124733482
+Approximation with 5 rectangles yields an area of 25.63017452006919
+The area of y = e^x from 2.0 to 3.5 is 25.63017452006919
+The equation was approximated using 5 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'log10' with args 0.0 1.0 1.1 2.3 and 1e-5%       
+...should produce a result close to '0.2653'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-5
+Approximation with 1 rectangles yields an area of 0.27653870565392863
+Approximation with 2 rectangles yields an area of 0.26829481880533146
+Approximation with 3 rectangles yields an area of 0.2666446273676119
+The area of y = log10 x from 1.1 to 2.3 is 0.2666446273676119
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'log10'                                            
+...should produce a result close to '0.2653'                                   
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 0.27653870565392863
+Approximation with 2 rectangles yields an area of 0.26829481880533146
+Approximation with 3 rectangles yields an area of 0.2666446273676119
+The area of y = log10 x from 1.1 to 2.3 is 0.2666446273676119
+The equation was approximated using 3 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'exp' with web page args and 1.6e-7%              
+...should produce a result close to '25.7264'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.6E-7
+Approximation with 1 rectangles yields an area of 23.463947826282258
+Approximation with 2 rectangles yields an area of 25.133181209702315
+Approximation with 3 rectangles yields an area of 25.46035381886988
+Approximation with 4 rectangles yields an area of 25.57627124733482
+Approximation with 5 rectangles yields an area of 25.63017452006919
+Approximation with 6 rectangles yields an area of 25.65952196412351
+Approximation with 7 rectangles yields an area of 25.677240280957214
+Approximation with 8 rectangles yields an area of 25.688749315797367
+Approximation with 9 rectangles yields an area of 25.696644044985895
+Approximation with 10 rectangles yields an area of 25.702293182023972
+Approximation with 11 rectangles yields an area of 25.706474023619972
+Approximation with 12 rectangles yields an area of 25.70965453396875
+Approximation with 13 rectangles yields an area of 25.712130100078824
+Approximation with 14 rectangles yields an area of 25.71409462344934
+Approximation with 15 rectangles yields an area of 25.715679653801224
+Approximation with 16 rectangles yields an area of 25.716976986780924
+Approximation with 17 rectangles yields an area of 25.7180522540497
+Approximation with 18 rectangles yields an area of 25.718953386952876
+Approximation with 19 rectangles yields an area of 25.71971605022791
+Approximation with 20 rectangles yields an area of 25.72036722482062
+Approximation with 21 rectangles yields an area of 25.72092762675963
+Approximation with 22 rectangles yields an area of 25.721413374984806
+Approximation with 23 rectangles yields an area of 25.721837163270443
+Approximation with 24 rectangles yields an area of 25.7222090978648
+Approximation with 25 rectangles yields an area of 25.722537305534996
+Approximation with 26 rectangles yields an area of 25.722828381220324
+Approximation with 27 rectangles yields an area of 25.72308772188308
+Approximation with 28 rectangles yields an area of 25.723319778457515
+Approximation with 29 rectangles yields an area of 25.72352824808112
+Approximation with 30 rectangles yields an area of 25.723716222251124
+Approximation with 31 rectangles yields an area of 25.723886302091458
+Approximation with 32 rectangles yields an area of 25.724040688811662
+Approximation with 33 rectangles yields an area of 25.724181255282684
+Approximation with 34 rectangles yields an area of 25.724309603100235
+Approximation with 35 rectangles yields an area of 25.724427108404942
+Approximation with 36 rectangles yields an area of 25.724534958920806
+Approximation with 37 rectangles yields an area of 25.724634184084888
+Approximation with 38 rectangles yields an area of 25.724725679702118
+Approximation with 39 rectangles yields an area of 25.724810228233412
+Approximation with 40 rectangles yields an area of 25.72488851557921
+Approximation with 41 rectangles yields an area of 25.724961145033337
+Approximation with 42 rectangles yields an area of 25.725028648940526
+Approximation with 43 rectangles yields an area of 25.72509149847839
+Approximation with 44 rectangles yields an area of 25.725150111900465
+Approximation with 45 rectangles yields an area of 25.725204861513504
+Approximation with 46 rectangles yields an area of 25.725256079603973
+Approximation with 47 rectangles yields an area of 25.725304063490714
+Approximation with 48 rectangles yields an area of 25.725349079849888
+Approximation with 49 rectangles yields an area of 25.725391368428195
+Approximation with 50 rectangles yields an area of 25.725431145240588
+Approximation with 51 rectangles yields an area of 25.725468605336115
+Approximation with 52 rectangles yields an area of 25.725503925191127
+Approximation with 53 rectangles yields an area of 25.725537264793097
+Approximation with 54 rectangles yields an area of 25.72556876945501
+Approximation with 55 rectangles yields an area of 25.72559857140149
+Approximation with 56 rectangles yields an area of 25.72562679115794
+Approximation with 57 rectangles yields an area of 25.725653538771397
+Approximation with 58 rectangles yields an area of 25.725678914885936
+Approximation with 59 rectangles yields an area of 25.72570301168817
+Approximation with 60 rectangles yields an area of 25.72572591374865
+Approximation with 61 rectangles yields an area of 25.725747698763076
+Approximation with 62 rectangles yields an area of 25.725768438212118
+Approximation with 63 rectangles yields an area of 25.725788197949043
+Approximation with 64 rectangles yields an area of 25.72580703872396
+Approximation with 65 rectangles yields an area of 25.725825016649097
+Approximation with 66 rectangles yields an area of 25.725842183619353
+Approximation with 67 rectangles yields an area of 25.725858587684698
+Approximation with 68 rectangles yields an area of 25.725874273389895
+Approximation with 69 rectangles yields an area of 25.7258892820748
+Approximation with 70 rectangles yields an area of 25.725903652147146
+Approximation with 71 rectangles yields an area of 25.725917419330575
+Approximation with 72 rectangles yields an area of 25.72593061688369
+Approximation with 73 rectangles yields an area of 25.72594327580372
+Approximation with 74 rectangles yields an area of 25.725955425008394
+Approximation with 75 rectangles yields an area of 25.72596709149964
+Approximation with 76 rectangles yields an area of 25.72597830051501
+Approximation with 77 rectangles yields an area of 25.72598907566395
+Approximation with 78 rectangles yields an area of 25.725999439052053
+Approximation with 79 rectangles yields an area of 25.726009411395964
+Approximation with 80 rectangles yields an area of 25.726019012123757
+Approximation with 81 rectangles yields an area of 25.726028259473992
+Approximation with 82 rectangles yields an area of 25.726037170577452
+Approximation with 83 rectangles yields an area of 25.726045761541503
+Approximation with 84 rectangles yields an area of 25.726054047519465
+Approximation with 85 rectangles yields an area of 25.726062042778175
+Approximation with 86 rectangles yields an area of 25.72606976076067
+Approximation with 87 rectangles yields an area of 25.726077214141167
+Approximation with 88 rectangles yields an area of 25.72608441487879
+Approximation with 89 rectangles yields an area of 25.726091374263525
+Approximation with 90 rectangles yields an area of 25.72609810296262
+Approximation with 91 rectangles yields an area of 25.726104611059895
+Approximation with 92 rectangles yields an area of 25.726110908094338
+Approximation with 93 rectangles yields an area of 25.72611700309477
+Approximation with 94 rectangles yields an area of 25.726122904612694
+Approximation with 95 rectangles yields an area of 25.72612862075041
+Approximation with 96 rectangles yields an area of 25.72613415919333
+Approximation with 97 rectangles yields an area of 25.726139527229954
+Approximation with 98 rectangles yields an area of 25.726144731780543
+Approximation with 99 rectangles yields an area of 25.726149779416485
+Approximation with 100 rectangles yields an area of 25.726154676383445
+Approximation with 101 rectangles yields an area of 25.72615942861806
+Approximation with 102 rectangles yields an area of 25.72616404176861
+Approximation with 103 rectangles yields an area of 25.726168521210525
+Approximation with 104 rectangles yields an area of 25.726172872060552
+Approximation with 105 rectangles yields an area of 25.726177099194164
+Approximation with 106 rectangles yields an area of 25.726181207258435
+Approximation with 107 rectangles yields an area of 25.726185200683286
+The area of y = e^x from 2.0 to 3.5 is 25.726185200683286
+The equation was approximated using 107 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'exp' with 0.0 1.0 2.0 3.5 and 1e-7%              
+...should produce a result close to '25.7264'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Percentage = 1.0E-7
+Approximation with 1 rectangles yields an area of 23.463947826282258
+Approximation with 2 rectangles yields an area of 25.133181209702315
+Approximation with 3 rectangles yields an area of 25.46035381886988
+Approximation with 4 rectangles yields an area of 25.57627124733482
+Approximation with 5 rectangles yields an area of 25.63017452006919
+Approximation with 6 rectangles yields an area of 25.65952196412351
+Approximation with 7 rectangles yields an area of 25.677240280957214
+Approximation with 8 rectangles yields an area of 25.688749315797367
+Approximation with 9 rectangles yields an area of 25.696644044985895
+Approximation with 10 rectangles yields an area of 25.702293182023972
+Approximation with 11 rectangles yields an area of 25.706474023619972
+Approximation with 12 rectangles yields an area of 25.70965453396875
+Approximation with 13 rectangles yields an area of 25.712130100078824
+Approximation with 14 rectangles yields an area of 25.71409462344934
+Approximation with 15 rectangles yields an area of 25.715679653801224
+Approximation with 16 rectangles yields an area of 25.716976986780924
+Approximation with 17 rectangles yields an area of 25.7180522540497
+Approximation with 18 rectangles yields an area of 25.718953386952876
+Approximation with 19 rectangles yields an area of 25.71971605022791
+Approximation with 20 rectangles yields an area of 25.72036722482062
+Approximation with 21 rectangles yields an area of 25.72092762675963
+Approximation with 22 rectangles yields an area of 25.721413374984806
+Approximation with 23 rectangles yields an area of 25.721837163270443
+Approximation with 24 rectangles yields an area of 25.7222090978648
+Approximation with 25 rectangles yields an area of 25.722537305534996
+Approximation with 26 rectangles yields an area of 25.722828381220324
+Approximation with 27 rectangles yields an area of 25.72308772188308
+Approximation with 28 rectangles yields an area of 25.723319778457515
+Approximation with 29 rectangles yields an area of 25.72352824808112
+Approximation with 30 rectangles yields an area of 25.723716222251124
+Approximation with 31 rectangles yields an area of 25.723886302091458
+Approximation with 32 rectangles yields an area of 25.724040688811662
+Approximation with 33 rectangles yields an area of 25.724181255282684
+Approximation with 34 rectangles yields an area of 25.724309603100235
+Approximation with 35 rectangles yields an area of 25.724427108404942
+Approximation with 36 rectangles yields an area of 25.724534958920806
+Approximation with 37 rectangles yields an area of 25.724634184084888
+Approximation with 38 rectangles yields an area of 25.724725679702118
+Approximation with 39 rectangles yields an area of 25.724810228233412
+Approximation with 40 rectangles yields an area of 25.72488851557921
+Approximation with 41 rectangles yields an area of 25.724961145033337
+Approximation with 42 rectangles yields an area of 25.725028648940526
+Approximation with 43 rectangles yields an area of 25.72509149847839
+Approximation with 44 rectangles yields an area of 25.725150111900465
+Approximation with 45 rectangles yields an area of 25.725204861513504
+Approximation with 46 rectangles yields an area of 25.725256079603973
+Approximation with 47 rectangles yields an area of 25.725304063490714
+Approximation with 48 rectangles yields an area of 25.725349079849888
+Approximation with 49 rectangles yields an area of 25.725391368428195
+Approximation with 50 rectangles yields an area of 25.725431145240588
+Approximation with 51 rectangles yields an area of 25.725468605336115
+Approximation with 52 rectangles yields an area of 25.725503925191127
+Approximation with 53 rectangles yields an area of 25.725537264793097
+Approximation with 54 rectangles yields an area of 25.72556876945501
+Approximation with 55 rectangles yields an area of 25.72559857140149
+Approximation with 56 rectangles yields an area of 25.72562679115794
+Approximation with 57 rectangles yields an area of 25.725653538771397
+Approximation with 58 rectangles yields an area of 25.725678914885936
+Approximation with 59 rectangles yields an area of 25.72570301168817
+Approximation with 60 rectangles yields an area of 25.72572591374865
+Approximation with 61 rectangles yields an area of 25.725747698763076
+Approximation with 62 rectangles yields an area of 25.725768438212118
+Approximation with 63 rectangles yields an area of 25.725788197949043
+Approximation with 64 rectangles yields an area of 25.72580703872396
+Approximation with 65 rectangles yields an area of 25.725825016649097
+Approximation with 66 rectangles yields an area of 25.725842183619353
+Approximation with 67 rectangles yields an area of 25.725858587684698
+Approximation with 68 rectangles yields an area of 25.725874273389895
+Approximation with 69 rectangles yields an area of 25.7258892820748
+Approximation with 70 rectangles yields an area of 25.725903652147146
+Approximation with 71 rectangles yields an area of 25.725917419330575
+Approximation with 72 rectangles yields an area of 25.72593061688369
+Approximation with 73 rectangles yields an area of 25.72594327580372
+Approximation with 74 rectangles yields an area of 25.725955425008394
+Approximation with 75 rectangles yields an area of 25.72596709149964
+Approximation with 76 rectangles yields an area of 25.72597830051501
+Approximation with 77 rectangles yields an area of 25.72598907566395
+Approximation with 78 rectangles yields an area of 25.725999439052053
+Approximation with 79 rectangles yields an area of 25.726009411395964
+Approximation with 80 rectangles yields an area of 25.726019012123757
+Approximation with 81 rectangles yields an area of 25.726028259473992
+Approximation with 82 rectangles yields an area of 25.726037170577452
+Approximation with 83 rectangles yields an area of 25.726045761541503
+Approximation with 84 rectangles yields an area of 25.726054047519465
+Approximation with 85 rectangles yields an area of 25.726062042778175
+Approximation with 86 rectangles yields an area of 25.72606976076067
+Approximation with 87 rectangles yields an area of 25.726077214141167
+Approximation with 88 rectangles yields an area of 25.72608441487879
+Approximation with 89 rectangles yields an area of 25.726091374263525
+Approximation with 90 rectangles yields an area of 25.72609810296262
+Approximation with 91 rectangles yields an area of 25.726104611059895
+Approximation with 92 rectangles yields an area of 25.726110908094338
+Approximation with 93 rectangles yields an area of 25.72611700309477
+Approximation with 94 rectangles yields an area of 25.726122904612694
+Approximation with 95 rectangles yields an area of 25.72612862075041
+Approximation with 96 rectangles yields an area of 25.72613415919333
+Approximation with 97 rectangles yields an area of 25.726139527229954
+Approximation with 98 rectangles yields an area of 25.726144731780543
+Approximation with 99 rectangles yields an area of 25.726149779416485
+Approximation with 100 rectangles yields an area of 25.726154676383445
+Approximation with 101 rectangles yields an area of 25.72615942861806
+Approximation with 102 rectangles yields an area of 25.72616404176861
+Approximation with 103 rectangles yields an area of 25.726168521210525
+Approximation with 104 rectangles yields an area of 25.726172872060552
+Approximation with 105 rectangles yields an area of 25.726177099194164
+Approximation with 106 rectangles yields an area of 25.726181207258435
+Approximation with 107 rectangles yields an area of 25.726185200683286
+Approximation with 108 rectangles yields an area of 25.726189083694866
+Approximation with 109 rectangles yields an area of 25.726192860326467
+Approximation with 110 rectangles yields an area of 25.726196534428563
+Approximation with 111 rectangles yields an area of 25.72620010967936
+Approximation with 112 rectangles yields an area of 25.72620358959324
+Approximation with 113 rectangles yields an area of 25.726206977529824
+Approximation with 114 rectangles yields an area of 25.726210276702673
+Approximation with 115 rectangles yields an area of 25.72621349018584
+Approximation with 116 rectangles yields an area of 25.726216620919992
+Approximation with 117 rectangles yields an area of 25.726219671723783
+Approximation with 118 rectangles yields an area of 25.726222645294573
+Approximation with 119 rectangles yields an area of 25.72622554421643
+Approximation with 120 rectangles yields an area of 25.72622837096892
+Approximation with 121 rectangles yields an area of 25.726231127926454
+Approximation with 122 rectangles yields an area of 25.726233817368357
+Approximation with 123 rectangles yields an area of 25.72623644148221
+Approximation with 124 rectangles yields an area of 25.72623900236604
+Approximation with 125 rectangles yields an area of 25.726241502034817
+The area of y = e^x from 2.0 to 3.5 is 25.726241502034817
+The equation was approximated using 125 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+Testing valid function name 'exp' with web page args and default prct          
+...should produce a result close to '25.5763'                                  
+============================================================================   
+
+ Welcome to SkateRamp! 
+
+This program simulates a SkateRamp sum approximation
+To see list of available functions run this program with List as the first argument
+To run tests of available functions run this program with Test as the first argument
+
+Approximation with 1 rectangles yields an area of 23.463947826282258
+Approximation with 2 rectangles yields an area of 25.133181209702315
+Approximation with 3 rectangles yields an area of 25.46035381886988
+Approximation with 4 rectangles yields an area of 25.57627124733482
+Approximation with 5 rectangles yields an area of 25.63017452006919
+The area of y = e^x from 2.0 to 3.5 is 25.63017452006919
+The equation was approximated using 5 rectangles
+.                                                                              
+.                                                                              
+============================================================================   
+End of Testing                                                                 
+============================================================================   
