@@ -13,10 +13,14 @@ public class BrobInt {
     public static final BrobInt NINE     = new BrobInt(  "9" );      /// Constant for "nine"
     public static final BrobInt TEN      = new BrobInt( "10" );      /// Constant for "ten"
 
-    public static final BrobInt MAX_INT  = new BrobInt( new Integer( Integer.MAX_VALUE ).toString() );
-    public static final BrobInt MIN_INT  = new BrobInt( new Integer( Integer.MIN_VALUE ).toString() );
-    public static final BrobInt MAX_LONG = new BrobInt( new Long( Long.MAX_VALUE ).toString() );
-    public static final BrobInt MIN_LONG = new BrobInt( new Long( Long.MIN_VALUE ).toString() );
+//    public static final BrobInt MAX_INT  = new BrobInt( new Integer( Integer.MAX_VALUE ).toString() );
+//    public static final BrobInt MIN_INT  = new BrobInt( new Integer( Integer.MIN_VALUE ).toString() );
+//    public static final BrobInt MAX_LONG = new BrobInt( new Long( Long.MAX_VALUE ).toString() );
+//    public static final BrobInt MIN_LONG = new BrobInt( new Long( Long.MIN_VALUE ).toString() );
+    public static final BrobInt MAX_INT  = new BrobInt( Integer.valueOf( Integer.MAX_VALUE ).toString() );
+    public static final BrobInt MIN_INT  = new BrobInt( Integer.valueOf( Integer.MIN_VALUE ).toString() );
+    public static final BrobInt MAX_LONG = new BrobInt( Long.valueOf( Long.MAX_VALUE ).toString() );
+    public static final BrobInt MIN_LONG = new BrobInt( Long.valueOf( Long.MIN_VALUE ).toString() );
 
     private String internalValue = "";        // internal String representation of this BrobInt
     private byte   sign          = 0;         // "0" is positive, "1" is negative
@@ -241,8 +245,8 @@ public class BrobInt {
        return new BrobInt(result);
    }
 
-
    public BrobInt divide( BrobInt gint ) {
+/*
         if (gint.isLarger(this) == 0) {
             return ONE;
         }
@@ -257,6 +261,7 @@ public class BrobInt {
                  d3[0] = dividend[i];
                  d3[1] = dividend[i+1];
              }
+*/
 
     throw new UnsupportedOperationException( "\n         Sorry, that operation is not yet implemented." );
 
@@ -278,7 +283,8 @@ public class BrobInt {
    public static BrobInt valueOf( long value ) throws NumberFormatException {
       BrobInt gi = null;
       try {
-         gi = new BrobInt( new Long( value ).toString() );
+//         gi = new BrobInt( new Long( value ).toString() );
+         gi = new BrobInt( Long.valueOf( value ).toString() );
       }
       catch( NumberFormatException nfe ) {
          System.out.println( "\n  Sorry, the value must be numeric of type long." );
