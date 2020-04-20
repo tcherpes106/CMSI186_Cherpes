@@ -1,0 +1,237 @@
+"running BirthdaySolver test harness for evaluation....." 
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 0 args 
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 3 args 
+   Probability that two out of 46 people have the same birthday: 
+      Experimental value is: 98.08%
+            Actual value is: 94.83%
+
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 0 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 1 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 2 
+   Probability that two out of 2 people have the same birthday: 
+      Experimental value is: .25%
+            Actual value is: .27%
+
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 25 
+   Probability that two out of 25 people have the same birthday: 
+      Experimental value is: 56.86%
+            Actual value is: 56.87%
+
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 50 
+   Probability that two out of 50 people have the same birthday: 
+      Experimental value is: 96.97%
+            Actual value is: 97.04%
+
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with -50 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 100 2 
+   Probability that two out of 100 people have the same birthday: 
+      Experimental value is: 100.00%
+            Actual value is: 100.00%
+
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 100 0 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 100 3000000 
+The number of experiment trials you have entered is quite large, please find a comfortable seat... as this may take some time!
+   Probability that two out of 100 people have the same birthday: 
+      Experimental value is: 100.00%
+            Actual value is: 100.00%
+
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 50 -1 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with banana smoothie  
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 73 50 
+   Probability that two out of 73 people have the same birthday: 
+      Experimental value is: 100.00%
+            Actual value is: 99.96%
+
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 39.8 100 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 398 10.5 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with -1 -1 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 3 -0 
+
+
+Hello and welcome to Birthday Solver! This is a program that calculates the probability that a pair of people will share the same birthday out of any desired size group.
+USAGE MESSAGE:
+   Please make sure to format your input like the following.
+   java BirthdaySolver <numberOfPeople> [numberOfExperiments]
+     where: 
+       <numberOfPeople> is an integer value that represents the size of the group of people you wish to calculate (Must be greater than 2)
+       [numberOfExperiments] is an integer value that represents the amount of trials you would like to run (This is optional. The program will default to 100,000 trials.))
+       
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 29 75 
+   Probability that two out of 29 people have the same birthday: 
+      Experimental value is: 58.67%
+            Actual value is: 68.10%
+
+
+========================================================= 
+. 
+. 
+Running BirthdaySolver with 123 321 
+   Probability that two out of 123 people have the same birthday: 
+      Experimental value is: 100.00%
+            Actual value is: 100.00%
+
+
