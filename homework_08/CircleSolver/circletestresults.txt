@@ -1,0 +1,69 @@
+"running CircleSolver test harness for evaluation....." 
+========================================================= 
+Inncorret input.
+. 
+Inncorret input.
+. 
+2 circles are needed for this program.
+. 
+Circle 1 is located at (-1, 1) and has a radius of 0.
+Circle 2 is located at (1, 2) and has a radius of 3.
+Circle 1 is inside of circle 2.
+. 
+Circle 1 is located at (1, 1) and has a radius of 1.
+Circle 2 is located at (1, 1) and has a radius of 1.
+Given circles are identical.
+. 
+Circle 1 is located at (100, 100) and has a radius of 100.
+Circle 2 is located at (200, 200) and has a radius of 200.
+Given circles intersect each other in 2 places.
+. 
+Circle 1 is located at (10, 30) and has a radius of 30.
+Circle 2 is located at (-10, 30) and has a radius of 30.
+Given circles intersect each other in 2 places.
+. 
+Circle 1 is located at (20, 30) and has a radius of 40.
+Circle 2 is located at (40, 30) and has a radius of 20.
+Circle 2 is inside circle 1, but their boundaries touch.
+. 
+Circle 1 is located at (100, 50) and has a radius of 50.
+Circle 2 is located at (10, 25) and has a radius of 25.
+Given circles are completely separate.
+. 
+Circle 1 is located at (10, 25) and has a radius of 25.
+Circle 2 is located at (100, 50) and has a radius of 50.
+Given circles are completely separate.
+. 
+Circle 1 is located at (0, 1) and has a radius of 2.
+Circle 2 is located at (0, -2) and has a radius of 2.
+Given circles intersect each other in 2 places.
+. 
+Circle 1 is located at (100, 100) and has a radius of 100.
+Circle 2 is located at (50, 50) and has a radius of 50.
+Given circles intersect each other in 2 places.
+. 
+Circle 1 is located at (10, 10) and has a radius of 20.
+Circle 2 is located at (-10, -10) and has a radius of 20.
+Given circles intersect each other in 2 places.
+. 
+Circle 1 is located at (40, 10) and has a radius of 20.
+Circle 2 is located at (10, 40) and has a radius of 80.
+Circle 1 is inside of circle 2.
+. 
+Inncorrect input. 
+. 
+Inncorret input.
+. 
+Circle 1 is located at (25, 25) and has a radius of 80.
+Circle 2 is located at (26, 26) and has a radius of 80.
+Given circles intersect each other in 2 places.
+. 
+Inncorret input.
+. 
+Circle 1 is located at (50, 50) and has a radius of 100.
+Circle 2 is located at (25, 25) and has a radius of 50.
+Circle 2 is inside of circle 1
+. 
+Circle 1 is located at (15, 25) and has a radius of 35.
+Circle 2 is located at (5, 10) and has a radius of 15.
+Circle 2 is inside of circle 1
