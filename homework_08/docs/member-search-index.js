@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"<Unnamed>","c":"ClockSolver","l":"ClockSolver(int[])","url":"%3Cinit%3E(int[])"},{"p":"<Unnamed>","c":"ClockSolver","l":"hours"},{"p":"<Unnamed>","c":"ClockSolver","l":"main(String[])","url":"main(java.lang.String[])"},{"p":"<Unnamed>","c":"ClockSolver","l":"minutes"},{"p":"<Unnamed>","c":"ClockSolver","l":"seconds"}]

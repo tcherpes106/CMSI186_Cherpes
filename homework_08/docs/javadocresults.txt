@@ -1,0 +1,6 @@
+CircleSolver.java:26: warning: no description for @throws
+      * @throws IOException
+        ^
+CircleSolver.java:27: error: reference not found
+      * @throws exception when radius is negative.                                        **/
+        ^
